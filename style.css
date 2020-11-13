@@ -8,7 +8,7 @@
 	width: 100%;
 	height: 100vh;
 	background: linear-gradient(rgba(53, 82, 66, 0.5), rgba(47, 80, 63, 0.6)),
-		url(images/bg.jpg) center no-repeat;
+		url(images/moutain.jpg) center no-repeat;
 	background-size: cover;
 	overflow: hidden;
 	position: relative;
@@ -16,3 +16,51 @@
 
 /*----------------------------A percentage of the full viewport height. 10vh will resolve to 10% of the current viewport height. Viewport Minimum ( vmin ) 
 – A percentage of the viewport width or height, whichever is smaller.-----------------------------------*/
+
+.banner{
+width:100;
+position: absolute;
+top:40%;
+left:50%;
+transform: translate(-50%,-50%);
+text-align: center;
+}
+/*--- text align center is used to align the text in center of the div ---*/
+
+/*  ---Transform: translate(-50%, -50%)The -50% transform basically means, in simple words, "move this element left and upwards by 50% of the computed dimension along the axis". -50% 
+along the x-axis means "move me leftwards by half my computed width", likewise for that in the y-axis */
+
+.banner h1{
+    font-size: 80px;
+    color:#ddd;
+    font-weight: 300;
+    margin-bottom: 30px;
+    animation:moveToLeft 2s,
+}
+/*--- font weight is used to make the text bold ---*/
+/*--- animation is used to move the text from left to right ---*/
+
+.banner span {
+    text-transform:uppercase;
+    font-weight: 700;
+    color: #fff;
+}
+    .banner p {
+    font-size: 50px;
+    font-weight: 300;
+    color: #eee;
+    margin-bottom: 20px;
+    animation: moveToRight 2s;
+    }
+
+    .banner button {
+    width: 180px;
+    padding: 12px;
+    margin: 20px;
+    border: 2px solid #eee;
+    border-radius: 50px;
+    font-size: 18px;
+    outline: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+    }
